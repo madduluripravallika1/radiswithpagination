@@ -40,6 +40,7 @@ public class CustomerService {
 
     // Method to send customers to Kafka
     public void sendCustomers() {
+        System.out.println("--------------------------------------------------");
         for (int i = 1; i <= 10; i++) {
             Customer customer = new Customer();
             customer.setId(i);
